@@ -1,0 +1,45 @@
+body{
+	text-align:center;
+}
+
+button{
+	width:200px;
+	height: 40px;
+	font-size: 16px;
+	font-weight:bold;
+	margin:2px;
+}
+
+ul{
+	list-style:none;
+}
+
+p{
+	margin:1px;
+}
+
+h3{
+	margin:2px;
+}
+
+#dtFinal, #dtInicial{
+	color:green;
+	font-size: 12px;
+}
+
+#erro{
+	color:red;
+}
+
+#location{
+	font-size: 14px;
+}
+
+#media{
+	font-size: 20px;
+	color:blue;
+}
+
+#itemData{
+	font-size: 9px;
+}

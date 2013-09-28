@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        id = "mylocation"
+        version = "2.0.0">
+    <name>My Location</name>
+
+    <description>A application for test of performace.</description>
+
+    <access origin="*"/>
+
+    <content src="index.html" />
+
+    <preference name="loglevel" value="DEBUG" />
+    
+    <feature name="Geolocation">
+      <param name="android-package" value="org.apache.cordova.GeoBroker"/>
+    </feature>
+    
+    <feature name="Storage">
+      <param name="android-package" value="org.apache.cordova.Storage"/>
+    </feature>
+    
+    <plugins>
+         <plugin name="Device" value="org.apache.cordova.Device"/>
+    </plugins>
+</widget>

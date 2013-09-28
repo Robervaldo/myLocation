@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Location</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<h3>My Location</h3><br>
+	<p id="dtInicial"></p>
+	<p id="erro"></p>
+	<p id="location"></p>
+	<p id="dtFinal"></p>
+	<p id="media"></p>
+	<button onclick="getLocation()">Get My Location</button><br>
+	<button onclick="onDrop()">Clean Table</button>
+	<br />
+	<ul id="itemData"></ul>
+	<script type="text/javascript" src="js/function.js"></script>
+	<script>
+		var loc = document.getElementById("location");
+		var msg = document.getElementById("erro");
+		var dti = document.getElementById("dtInicial");
+		var dtf = document.getElementById("dtFinal");
+		var med = document.getElementById("media");
+		
+		var lat = null;
+		var lon = null;
+		var dtInicio = null;
+		var localDB = null;
+		var count = 0;
+		
+		initDB();
+		createTables();
+		selectBanco();
+	</script>
+</body>
+</html>
