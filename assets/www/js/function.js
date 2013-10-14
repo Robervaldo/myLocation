@@ -168,7 +168,7 @@ function selectBanco() {
 			});
 		});
 	} catch (e) {
-		alert("Error: SELECT nã o realizado " + e + ".");
+		alert("Error: SELECT não realizado " + e + ".");
 	}
 }
 
@@ -182,7 +182,12 @@ function selectResult() {
 					var row = results.rows.item(i);
 					resultBanco = resultBanco+row['time'];
 				}
-				med.innerHTML = "M&eacute;dia: "+resultBanco/results.rows.length+" milisegundos";
+				if(resultBanco != null){
+					loc.innerHTML = "Latitude: " + row['lat'] + "<br /> Longitude: " + row['lon'] ;
+					dti.innerHTML = "Hora Inicial: "+ row['dtInicio'];
+					dtf.innerHTML = "Hora Final: "+ row['dtFim'];
+					med.innerHTML = "M&eacute;dia: "+resultBanco/results.rows.length+" milisegundos";
+				}
 			}, function (transaction, error) {
 				//alert("Error in select: " + error.code + " Mensagem: " + error.message);
 			});
